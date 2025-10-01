@@ -8,7 +8,7 @@ $data = array(
 );
 
 $path = __DIR__;
-// echo($path);
+echo($path);
 
 $filename = __DIR__ . DIRECTORY_SEPARATOR . "data" . DIRECTORY_SEPARATOR . "stock.csv";
 echo($filename);
