@@ -15,7 +15,8 @@
     
 <?php
     foreach($aryStocks as $stocks) {
-        echo ("<p>$stocks[0]  $stocks[1]</p>");
+        $path = "images/$stocks[3]";
+        echo ("<p>$stocks[0]  $stocks[1]  <img src = '$path' alt='$stocks[1]'></p>");
     }
 ?>
 

@@ -3,8 +3,6 @@ require __DIR__ . '/includes/functions.php';
 $csvPath = __DIR__ . '/games/games.csv';
 
 $rows = read_csv_rows($csvPath);
-
-
 ?>
 
 
@@ -18,9 +16,13 @@ $rows = read_csv_rows($csvPath);
 </head>
 
 <body>
-    <td><?= esc_html($row[0]) ?></td>
-    <td><?= esc_html($row[1]) ?></td>
-    <td>$<?= esc_html(number_format((float)$row[2], 2)) ?></td>
+    <table>
+        <?php foreach ($rows as $row) {
+            echo ("<td><?= esc_html($row[0]) ?></td>");
+            echo ("<td><?= esc_html($row[1]) ?></td>");
+            echo ("<td>$<?= esc_html(number_format((float)$row[2], 2)) ?></td>");
+        } ?>
+    </table>
 </body>
 
 </html>

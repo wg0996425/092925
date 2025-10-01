@@ -1,10 +1,10 @@
 <?php
 $data = array(
-    ['GOOG', 'Google Inc.', '800'],
-    ['AAPL', 'Apple Inc.', '500'],
-    ['AMZN', 'Amazon.com Inc.', '250'],
-    ['YHOO', 'Yahoo! Inc.', '250'],
-    ['FB', 'Facebook, Inc.', '30'],
+    ['GOOG', 'Google Inc.', '800', 'google.png'],
+    ['AAPL', 'Apple Inc.', '500', 'apple.png'],
+    ['AMZN', 'Amazon.com Inc.', '250', 'google.png'],
+    ['YHOO', 'Yahoo! Inc.', '250', 'apple.png'],
+    ['FB', 'Facebook, Inc.', '30', 'google.png'],
 );
 
 $path = __DIR__;

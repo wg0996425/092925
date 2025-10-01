@@ -1,7 +1,7 @@
 <?php 
 $path = __DIR__ . DIRECTORY_SEPARATOR . "games";
 if (!file_exists($path)) {
-    mkdir($path, 0755);
+    mkdir($path, 0755, true);
 }
 
 $games = array(
